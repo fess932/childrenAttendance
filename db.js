@@ -6,7 +6,7 @@ const adapter = new FileSync('storage.json')
 const db = low(adapter)
 
 // Set some defaults (required if your JSON file is empty)
-db.defaults({ children: [], days: {} }).write()
+db.defaults({ children: [], days: [] }).write()
 
 // Add a post
 // db.get('children').push({ id: 1, title: 'lowdb is awesome' }).write()

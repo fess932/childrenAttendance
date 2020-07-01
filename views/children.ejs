@@ -6,11 +6,12 @@
     <title>Document</title>
   </head>
   <body>
+    <a href="/">На главную</a>
     <h1>Список детей</h1>
 
-    <p>Имя Фамилия</p>
+    <p>ID : Имя : Фамилия</p>
     <% children.forEach(child=> { %>
-    <li><%= child.name %> <%= child.surname %></li>
+    <li><%= child.id %> <%= child.name %> <%= child.surname %></li>
     <% }) %>
     <a href="/children/add">Добавить ребенка</a>
   </body>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Дни</h1>
+    <% days.forEach(day=> { %>
+        <li>ID:<%= day.id %> Дата: <a href="/days/byid/<%= day.id %>"><%= day.date %></a></li>
+    <% }) %>
+    <a href="/days/muster" class="">Перекличка за сегодня</a>
+</body>
+</html>

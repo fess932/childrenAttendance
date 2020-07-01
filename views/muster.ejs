@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Перекличка, текущая дата <%= moment().format('Do MMMM, YYYY') %> </h1>
+    <form action="/days/muster" method="post">
+        <input value="<%= '_' + Math.random().toString(36).substr(2, 9) %>" name="id">
+        <input type="date" name="date" value="<%= moment().format('YYYY-MM-DD') %>">
+
+        <% children.forEach(child=> { %>
+            <li><label><span><%= child.name %> <%= child.surname %></span><input type="checkbox" name="children[<%= child.id %>]"></label> </li>
+        <% }) %>
+        <button type="submit">Подтвердить</button>
+    </form>
+    
+</body>
+</html>

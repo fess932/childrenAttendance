@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/">Домой</a>
+    <h1>Информация по дню <%= date %></h1>
+    <% children.forEach(child=> { %>
+        <li> 
+        <% if (child.attend) { %>
+            Присутствовал
+        <% } else { %>
+            Отсутствовал
+        <% } %> 
+
+        ID:<% child.id %> Имя: <%= child.name %> Фамилия <%= child.surname %>  </a></li>
+    <% }) %>
+</body>
+</html>

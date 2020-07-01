@@ -1,4 +1,5 @@
-const children = require('./childrenHandlers.js')
+const children = require('./children.js')
+const days = require('./days.js')
 
 const path = require('path')
 const express = require('express')
@@ -22,6 +23,11 @@ app.get('/', function (r, w) {
 app.get('/children', children.renderChildren)
 app.get('/children/add', children.renderAddChildren)
 app.post('/children/add', children.addChildren)
+
+app.get('/days', days.renderDays)
+app.get('/days/byid/:id', days.getByID)
+app.get('/days/muster', days.musterGet)
+app.post('/days/muster', days.musterPost)
 
 app.listen(port, (err) => {
   if (err) {
