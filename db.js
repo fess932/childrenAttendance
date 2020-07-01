@@ -1,7 +1,8 @@
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
+const path = require('path')
 
-const adapter = new FileSync('db/db.json')
+const adapter = new FileSync('storage.json')
 const db = low(adapter)
 
 // Set some defaults (required if your JSON file is empty)

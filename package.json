@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js --ignore db/"
+    "dev": "nodemon index.js --ignore storage.json",
+    "build": "pkg . --targets win --output dist/app.exe"
+  },
+  "pkg": {
+    "assets": [
+      "views/**/*"
+    ]
   },
   "repository": {
     "type": "git",
@@ -21,7 +28,10 @@
   "dependencies": {
     "ejs": "^3.1.3",
     "express": "^4.17.1",
-    "lowdb": "^1.0.0",
-    "opn": "^6.0.0"
+    "lowdb": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "pkg": "^4.4.9"
   }
 }
