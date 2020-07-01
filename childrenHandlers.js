@@ -1,5 +1,11 @@
+const { db } = require('./db.js')
+
 function addChildren(r, w) {
-  console.log(r.body)
+  console.log(r.body.name)
+  db.get('children')
+    .push({ name: r.body.name, surname: r.body.surname })
+    .write()
+  console.log(db.get('children').value())
   w.render('childrenSuccess')
 }
 
@@ -8,7 +14,9 @@ function renderAddChildren(r, w) {
 }
 
 function renderChildren(r, w) {
-  w.render('children')
+  // console.log(db.get('children').value())
+  let children = []
+  w.render('children', { children: db.get('children').value() })
 }
 
 module.exports = {

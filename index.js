@@ -1,11 +1,15 @@
 const express = require('express')
 const app = express()
 
+// Parse URL-encoded bodies (as sent by HTML forms)
+app.use(express.urlencoded({ extended: true }))
+
+// Parse JSON bodies (as sent by API clients)
+app.use(express.json())
+
 app.set('view engine', 'ejs')
 app.set('views', './views')
 
-// const low = require('lowdb')
-// const FileSync = require('lowdb/adapters/FileSync')
 const children = require('./childrenHandlers.js')
 
 const port = process.env.PORT || '8000'
@@ -24,6 +28,10 @@ app.listen(port, (err) => {
   }
   console.log(`server is listening on ${port}`)
 })
+
+// open browsen on start
+// const opn = require('opn')
+// opn(`http://localhost:${port}`)
 
 // const requestHandler = (r, w) => {
 //   console.log(r.url)
