@@ -3,14 +3,12 @@
     {
       "name": "Иван",
       "surname": "Иванов",
-      "id": "_mn87q0n4i",
-      "attend": true
+      "id": "_mn87q0n4i"
     },
     {
       "name": "Петр",
       "surname": "Петров",
-      "id": "_blzpymdf5",
-      "attend": true
+      "id": "_blzpymdf5"
     },
     {
       "name": "Рандомный",
@@ -40,6 +38,142 @@
     {
       "id": "_xhqgdc5xz",
       "date": "2020-07-01",
+      "children": [
+        {
+          "name": "Иван",
+          "surname": "Иванов",
+          "id": "_mn87q0n4i",
+          "attend": true
+        },
+        {
+          "name": "Петр",
+          "surname": "Петров",
+          "id": "_blzpymdf5",
+          "attend": true
+        },
+        {
+          "name": "Рандомный",
+          "surname": "Ребенок не ходит",
+          "id": "_2gkfi9ix8"
+        }
+      ]
+    },
+    {
+      "id": "_qc90po170",
+      "date": "2020-07-10",
+      "children": [
+        {
+          "name": "Иван",
+          "surname": "Иванов",
+          "id": "_mn87q0n4i",
+          "attend": true
+        },
+        {
+          "name": "Петр",
+          "surname": "Петров",
+          "id": "_blzpymdf5",
+          "attend": true
+        },
+        {
+          "name": "Рандомный",
+          "surname": "Ребенок не ходит",
+          "id": "_2gkfi9ix8",
+          "attend": true
+        }
+      ]
+    },
+    {
+      "id": "_gzl1suu65",
+      "date": "2020-07-10",
+      "children": [
+        {
+          "name": "Иван",
+          "surname": "Иванов",
+          "id": "_mn87q0n4i",
+          "attend": true
+        },
+        {
+          "name": "Петр",
+          "surname": "Петров",
+          "id": "_blzpymdf5",
+          "attend": true
+        },
+        {
+          "name": "Рандомный",
+          "surname": "Ребенок не ходит",
+          "id": "_2gkfi9ix8",
+          "attend": true
+        }
+      ]
+    },
+    {
+      "id": "_3lauz2o24",
+      "date": "2020-07-10",
+      "children": [
+        {
+          "name": "Иван",
+          "surname": "Иванов",
+          "id": "_mn87q0n4i",
+          "attend": true
+        },
+        {
+          "name": "Петр",
+          "surname": "Петров",
+          "id": "_blzpymdf5",
+          "attend": true
+        },
+        {
+          "name": "Рандомный",
+          "surname": "Ребенок не ходит",
+          "id": "_2gkfi9ix8",
+          "attend": true
+        }
+      ]
+    },
+    {
+      "id": "_fzoansoah",
+      "date": "2020-07-10",
+      "children": [
+        {
+          "name": "Иван",
+          "surname": "Иванов",
+          "id": "_mn87q0n4i",
+          "attend": true
+        },
+        {
+          "name": "Петр",
+          "surname": "Петров",
+          "id": "_blzpymdf5"
+        },
+        {
+          "name": "Рандомный",
+          "surname": "Ребенок не ходит",
+          "id": "_2gkfi9ix8",
+          "attend": true
+        }
+      ]
+    },
+    {
+      "id": "_m573lsukb",
+      "date": "2020-07-10",
+      "children": [
+        {
+          "name": "Иван",
+          "surname": "Иванов",
+          "id": "_mn87q0n4i",
+          "attend": true
+        },
+        {
+          "name": "Петр",
+          "surname": "Петров",
+          "id": "_blzpymdf5",
+          "attend": true
+        }
+      ]
+    },
+    {
+      "id": "_tl8o7f5nl",
+      "date": "2020-07-10",
       "children": [
         {
           "name": "Иван",

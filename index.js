@@ -33,7 +33,7 @@ app.listen(port, (err) => {
   if (err) {
     return console.log('шото не так', err)
   }
-  console.log(`server is listening on ${port}`)
+  console.log(`server is listening on http://localhost:${port}`)
 })
 
 

@@ -17,10 +17,13 @@ function musterPost(r, w) {
 
     let fullchilds = db.get('children').value()
     fullchilds.forEach(child => {
+        let ch = {}
+        ch = Object.assign(ch, child)
         if (r.body.children[child.id] === 'on') {
-            child.attend = true
+            ch.attend = true
         }
-        children.push(child)
+
+        children.push(ch)
     })
 
     db.get('days')
