@@ -29,6 +29,23 @@
           "id": "_0di5pmmx0"
         }
       ]
+    },
+    {
+      "id": "_agtgdfd8l",
+      "date": "2020-07-13",
+      "children": [
+        {
+          "name": "Ходит",
+          "surname": "",
+          "id": "_aev73nhlk",
+          "attend": true
+        },
+        {
+          "name": "Не ",
+          "surname": "Ходит",
+          "id": "_0di5pmmx0"
+        }
+      ]
     }
   ]
 }

@@ -8,9 +8,6 @@ const app = express()
 // Parse URL-encoded bodies (as sent by HTML forms)
 app.use(express.urlencoded({ extended: true }))
 
-// Parse JSON bodies (as sent by API clients)
-app.use(express.json())
-
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
@@ -31,12 +28,7 @@ app.post('/days/muster', days.musterPost)
 
 app.listen(port, (err) => {
   if (err) {
-    return console.log('шото не так', err)
+    return console.log('произошла ошибка при запуске', err)
   }
-  console.log(`server is listening on http://localhost:${port}`)
+  console.log(`приложение доступно по адресу http://localhost:${port}`)
 })
-
-
-// open browsen on start
-// const opn = require('opn')
-// opn(`http://localhost:${port}`)
